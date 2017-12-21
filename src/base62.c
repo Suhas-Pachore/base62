@@ -17,6 +17,8 @@ int main(int argc, char *argv[])
 	buildLookups(base62itoa, base62atoi);
 
 	strcpy(prevnum,"00");
+	prevnum[2]='\0';
+	nextnum[2]='\0';
 	while(1)
 	{
 		printf("%s ",prevnum);
