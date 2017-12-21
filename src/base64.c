@@ -38,9 +38,7 @@ void base64NextNum(char *prev, char *next, int *base64itoa, int *base64atoi)
 			sprintf(next, "%d", (prev_num + 1));
 			return;
 		}
-		else {
-			prev_num = 639; //it sets the next number after 99 to a0; skipps intermidiate 540 numbers for simplicity.
-		}
+		prev_num = 639; //it sets the next number after 99 to a0; skipps intermidiate 540 numbers for simplicity.
 	}
 
 	int next_num = prev_num + 1;
